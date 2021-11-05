@@ -3,7 +3,7 @@
 
 %% mainScript
 % Instructions pour PSY2038/PSY6976
-% Inclure l’information suivante en haut de votre script (en commentaires): 
+% Suggestion de l’information à inclure en haut de votre script (en commentaires): 
 % 1-Nom de l’expérience
 % 2-Explications très brèves du but de l’expérience & de la consigne pour le participant (2 phrases max)
 % 3-Nom du fichier de l’expérience (script principal) et noms des fonctions utilisées
