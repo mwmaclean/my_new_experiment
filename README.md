@@ -2,13 +2,13 @@
 
 ## Ressources to help structure your code
 
-PTB demos : Path\to\tutorials\
+PsychDemos downloaded with PTB:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
+
 [Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html)
+
 [Forum PTB](http://www.catb.org/~esr/faqs/smart-questions.html)
+
 [Bug Report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html)
-
-
-## Content
 
 
 ## How to install and use this template
@@ -20,7 +20,7 @@ files and submodules already set up. You only have to then clone the repository
 and you are good to go.
 
 
-## How to install and run
+**How to install and run**
 
 Install
 ```
