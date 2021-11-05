@@ -1,0 +1,6 @@
+[submodule "lib/CPP_PTB"]
+	path = lib/CPP_PTB
+	url = https://github.com/cpp-lln-lab/CPP_PTB.git
+[submodule "lib/CPP_BIDS"]
+	path = lib/CPP_BIDS
+	url = https://github.com/cpp-lln-lab/CPP_BIDS.git
