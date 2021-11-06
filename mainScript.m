@@ -27,13 +27,13 @@ fprintf('Connected device is %s \n\n',Cfg.device);
 % Basic parameters for presentation of events.
 cfg = setParameters; 
 cfg = userInputs(cfg);
-%         Other option for user inputs:
-%         % Get subject name and run number (prompt to get the SubjectName & runNumber before the start of the experiment)
+%         % Other option for user inputs:
+        % Get subject name and run number (prompt to get the SubjectName & runNumber before the start of the experiment)
 %         subjectName = input('Enter Subject Name: ','s');
 %         if isempty(subjectName)
 %           subjectName = 'trial';
 %         end
-%         
+        
 %         runNumber = input('Enter the run Number: ','s');
 %         if isempty(runNumber)
 %           runNumber = 'trial';
