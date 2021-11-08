@@ -1,12 +1,13 @@
 # Template repository for matlab PTB project
 
-This repo used the template from the CPP Lab developpers [here](https://github.com/cpp-lln-lab/template_PTB_experiment). 
+This repo used the template from the CPP Lab developpers [here](https://github.com/cpp-lln-lab/template_PTB_experiment).
+It was adapted to be used as a teaching example. 
 
 ## Ressources to help structure your code
 
 PsychDemos downloaded with PTB:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
 
-GitHub: Search for PTB scripts
+GitHub: Search for PTB repos/scripts
 
 [Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html)
 
@@ -15,7 +16,7 @@ GitHub: Search for PTB scripts
 [Bug Report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html)
 
 
-## How to install and use this template
+## How to install and use this repo
 
 For the intro course, fork [this current repo](https://github.com/mwmaclean/my_new_experiment) to your github account with all the files, folders and submodules. You only have to then clone the repository and you are good to go.
 
@@ -54,15 +55,17 @@ mainScript
 #### Quick PTB coding tips
 
 1) Avoid long scripts- use fonctions : it's easier to read
-    Check if you can use/start from available functions from CPP_SPM [here](https://github.com/cpp-lln-lab/CPP_PTB/tree/f4f5519cb5e0661b8559921d3b71a18351250a09/src)
+    - Check if you can use/start from available functions from CPP_SPM [here](https://github.com/cpp-lln-lab/CPP_PTB/tree/f4f5519cb5e0661b8559921d3b71a18351250a09/src)
 
 2) Avoid 'hard coding', centralize all your parameters in a function or structure
 
-- Save everything in the structure (configuration: cfg) & save in a .tsv file so other softwares can read it.
+    - Save everything in the structure (configuration: cfg) & save in a .tsv file so other softwares can read it.
 
-3) Use 'try-catch' in case an error/bug happens in your code: see example in MullerLyler demos of PTB
+3) Use 'try-catch' in case an error/bug happens in your code
+    - See example in MullerLyler demos of PTB
 
-4) Use a seperate file for the order of trials/conditions- should be independant of your code/main script.
+4) Use a seperate file for the order of trials/conditions
+    - Should be independant of your code/main script.
 
 
 
