@@ -36,18 +36,22 @@ Run
 mainScript
 ```
 
-**Quick PTB coding tips**
 
-Avoid long scripts- use fonctions : it's easier to read
+**Main Steps of template experiment**
+Clear screen, set parameters, prompt user input, initialize PTB, display instructions, start experiment, design blocks/trials, collect responses, save events, goodbye screen, close.
+
+#### Quick PTB coding tips
+
+1) Avoid long scripts- use fonctions : it's easier to read
     Check if you can use/start from available functions from CPP_SPM [here](https://github.com/cpp-lln-lab/CPP_PTB/tree/f4f5519cb5e0661b8559921d3b71a18351250a09/src)
 
-Avoid 'hard coding', centralize all your parameters in a function or structure
+2) Avoid 'hard coding', centralize all your parameters in a function or structure
 
-Save everything in the structure (configuration: cfg)
+- Save everything in the structure (configuration: cfg) & save in a .tsv file so other softwares can read it.
 
-Also directly save everything in a .tsv file so other softwares can read it.
+3) Use 'try-catch' in case an error/bug happens in your code: see example in MullerLyler demos of PTB
 
-Use 'try-catch' in case an error/bug happens in your code: see example in MullerLyler demos of PTB
+4) Use a seperate file for the order of trials/conditions- should be independant of your code/main script.
 
-The order of trials/conditions should be independant of your code - save in a seperate file
+
 

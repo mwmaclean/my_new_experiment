@@ -2,16 +2,15 @@
 % (C) Copyright 2020 CPP visual motion localizer developpers
 
 %% mainScript
-% Instructions pour PSY2038/PSY6976
-% Suggestion de l’information à inclure en haut de votre script (en commentaires): 
-% 1-Nom de l’expérience
-% 2-Explications très brèves du but de l’expérience & de la consigne pour le participant (2 phrases max)
-% 3-Nom du fichier de l’expérience (script principal) et noms des fonctions utilisées
-% 4-Courte description de ce qui est enregistré à la fin (i.e., output du script)
-% 5-Ce dont on a besoin pour rouler votre script (e.g.,: PsychToolBox, fichier des conditions/essais)
-% 6-Vos noms, l’année & courriels
+% 1- Nom de l’expérience ici
+% 2- Courte description de l’expérience & de la consigne pour le participant
+% 3- Nom du fichier de l’expérience (script principal) & noms des fonctions utilisées
+% 4- Courte description de ce qui est enregistré (output du script)
+% 5- Ce dont on a besoin pour rouler votre script (e.g.,: PsychToolBox, fichier des conditions/essais)
+% 6- L’année, vos noms & courriels
 
-%Début du template:
+%Code ci-dessous:
+
 % Clear all previous stuff
 clear all;
 clc;
@@ -24,16 +23,17 @@ fprintf('Connected device is %s \n\n',Cfg.device);
 
 
 % Set and load all the parameters to run the experiment
-% Basic parameters for presentation of events.
 cfg = setParameters; 
+
+% Get subject name & run number before the start of the experiment
 cfg = userInputs(cfg);
 %         % Other option for user inputs:
-        % Get subject name and run number (prompt to get the SubjectName & runNumber before the start of the experiment)
+%        % Get subject name and run number 
 %         subjectName = input('Enter Subject Name: ','s');
 %         if isempty(subjectName)
 %           subjectName = 'trial';
 %         end
-        
+%         
 %         runNumber = input('Enter the run Number: ','s');
 %         if isempty(runNumber)
 %           runNumber = 'trial';
@@ -44,16 +44,20 @@ cfg = userInputs(cfg);
 %             numberTraining = 10;
 %             Cfg.numEvents = numberTraining;
 %         end
-%         cfg = createFilename(cfg);
+
+% Create the BIDS directories & fileNames for the behavioral output
+    % for this subject / session / run using the information from cfg.
+% cfg = createFilename(cfg); 
 
 %%  Experiment
 
-% Safety loop: close the screen if code crashes
+% Safety loop: close the screen if code crashes (try-catch)
 try
 
     %% Init the experiment
     [cfg] = initPTB(cfg);
     
+%           % Basic elements to include to initialize the experiment:
 %             AssertOpenGL; % Verify if PTB is based on OpenGL & Screen(), break & error if not
 %             
 %             Screen('Preference','SkipSyncTests', 1); % forces script to continue if sync tests fail
@@ -77,9 +81,11 @@ try
 %             % Get the Center of the Screen
 %             Cfg.center = [Cfg.winRect(3), Cfg.winRect(4)]/2; %it assumes the rectangle starts from (0,0); 3 and 4 are the components
 
+
+% Finalize PTB setup
     cfg = postInitializationSetup(cfg);
 
-%             % generic function to finalize some set up after psychtoolbox has been
+%             % generic function to finalize some set up after PTB has been
 %             % initialized
 %         
 %             cfg = deal(varargin{:});
@@ -90,7 +96,7 @@ try
 %         
 %             varargout = {cfg};
 
-    % Prepare for the output logfiles with all
+    % Prepare output logfiles
     logFile.extraColumns = cfg.extraColumns;
     logFile = saveEventsFile('open', cfg, logFile);
 
@@ -165,7 +171,7 @@ try
 
     end
 
-    % End of the run for the BOLD to go down
+    % End of the run for the BOLD to go down (if doing an fMRI experiment)
     waitFor(cfg, cfg.timing.endDelay);
 
     cfg = getExperimentEnd(cfg);
@@ -188,7 +194,7 @@ try
     getResponse('stop', cfg.keyboard.responseBox);
     getResponse('release', cfg.keyboard.responseBox);
 
-    createJson(cfg, cfg); 
+%     createJson(cfg, cfg); 
 
     farewellScreen(cfg);
 %         Screen('FillRect', cfg.screen.win, cfg.color.background, cfg.screen.winRect);
@@ -198,11 +204,11 @@ try
 %             WaitSecs(cfg.mri.repetitionTime * 2);
 %         end
 
-    cleanUp();
+    cleanUp(); % close all windows, ports, show mouse cursor, close keyboard queues & give access back to the keyboards
 
 catch
 
-    cleanUp();
-    psychrethrow(psychlasterror);
+    cleanUp();  
+    psychrethrow(psychlasterror); % will catch bug in last error and display
 
 end
