@@ -15,6 +15,7 @@ GitHub: Search for PTB repos/scripts
 
 [Bug Report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html)
 
+[Art of readable code](https://twitter.com/RemiGau/status/1457706739739070467)
 
 ## How to install and use this repo
 
@@ -55,7 +56,7 @@ mainScript
 #### Quick PTB coding tips
 
 1) Avoid long scripts- use fonctions : it's easier to read
-    - Check if you can use/start from available functions from CPP_PTB [here](https://github.com/cpp-lln-lab/CPP_PTB/tree/f4f5519cb5e0661b8559921d3b71a18351250a09/src)
+    - Check if you can start from available functions from CPP_PTB [here](https://github.com/cpp-lln-lab/CPP_PTB/tree/f4f5519cb5e0661b8559921d3b71a18351250a09/src)
 
 2) Avoid 'hard coding', centralize all your parameters in a function or structure
 

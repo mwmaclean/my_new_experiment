@@ -17,11 +17,6 @@ clc;
 
     %Cfg: configuration, a structure that holds all the info of the experiment
     
-%Specify device used.
-Cfg.device = 'PC';  
-fprintf('Connected device is %s \n\n',Cfg.device);
-
-
 % Set and load all the parameters to run the experiment
 cfg = setParameters; 
 
@@ -47,7 +42,7 @@ cfg = userInputs(cfg);
 
 % Create the BIDS directories & fileNames for the behavioral output
     % for this subject / session / run using the information from cfg.
-% cfg = createFilename(cfg); 
+cfg = createFilename(cfg); 
 
 %%  Experiment
 
