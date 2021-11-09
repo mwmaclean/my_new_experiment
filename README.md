@@ -9,7 +9,7 @@ PsychDemos that are in the `exampleScripts` folder [here](https://github.com/mwm
 
 GitHub: Search for PTB repos/scripts
 
-[Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html). The [simple_demos.m] in the `exampleScripts` folder are a compilation of 7 of these tutorials for you to quickly test. 
+[Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html). The [simple_demos.m](https://github.com/mwmaclean/my_new_experiment/blob/master/exampleScript/simple_demos.m) in the `exampleScripts` folder are a compilation of some of these tutorials. You can simply run each. 
 
 [Forum PTB](http://www.catb.org/~esr/faqs/smart-questions.html)
 
