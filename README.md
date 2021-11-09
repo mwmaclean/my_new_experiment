@@ -5,11 +5,11 @@ It was adapted to be used as a teaching example.
 
 ## Ressources to help structure your code
 
-PsychDemos that are in the `exampleScript` folder [here](https://github.com/mwmaclean/my_new_experiment/tree/master/exampleScript/PsychExampleExperiments) were taken from the PTB code:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
+PsychDemos that are in the `exampleScripts` folder [here](https://github.com/mwmaclean/my_new_experiment/tree/master/exampleScript/PsychExampleExperiments) were taken from the PTB code:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
 
 GitHub: Search for PTB repos/scripts
 
-[Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html)
+[Peter Scarf PTB Tutorials](https://peterscarfe.com/ptbtutorials.html). The [simple_demos.m] in the `exampleScripts` folder are a compilation of 7 of these tutorials for you to quickly test. 
 
 [Forum PTB](http://www.catb.org/~esr/faqs/smart-questions.html)
 
