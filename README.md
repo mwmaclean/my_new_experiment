@@ -5,7 +5,7 @@ It was adapted to be used as a teaching example.
 
 ## Ressources to help structure your code
 
-PsychDemos downloaded with PTB:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
+PsychDemos that are in the `exampleScript` folder were taken from the PTB code:  C:\PATH\to\PTB\Psychtoolbox\PsychDemos (change path to where you downloaded PTB)
 
 GitHub: Search for PTB repos/scripts
 
