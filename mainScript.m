@@ -15,6 +15,9 @@
 clear all;
 clc;
 
+% make sure we got access to all the required functions and inputs
+initEnv();
+
     %Cfg: configuration, a structure that holds all the info of the experiment
     
 % Set and load all the parameters to run the experiment
@@ -189,7 +192,7 @@ try
     getResponse('stop', cfg.keyboard.responseBox);
     getResponse('release', cfg.keyboard.responseBox);
 
-%     createJson(cfg, cfg); 
+    createJson(cfg, cfg); 
 
     farewellScreen(cfg);
 %         Screen('FillRect', cfg.screen.win, cfg.color.background, cfg.screen.winRect);
