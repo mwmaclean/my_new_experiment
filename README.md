@@ -32,6 +32,9 @@ GitHub: Search for PTB repos/scripts
 4) Use a seperate file for the order of trials/conditions
     - Should be independant of your code/main script.
 
+5) If an error occurs, enable debug mode in MATLAB: 
+    - Add breakpoints & run code
+
 ## How to install and use this repo
 
 For the intro course, fork [this current repo](https://github.com/mwmaclean/my_new_experiment) to your github account with all the files, folders and submodules. You only have to then clone the repository and you are good to go.
