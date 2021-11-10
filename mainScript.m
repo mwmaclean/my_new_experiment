@@ -95,7 +95,7 @@ try
 %             varargout = {cfg};
 
     % Prepare output logfiles
-    logFile.extraColumns = cfg.extraColumns;
+    cfg = checkCFG(cfg);
     logFile = saveEventsFile('init', cfg);
     logFile = saveEventsFile('open', cfg, logFile);
 
