@@ -2,12 +2,12 @@
 % (C) Copyright 2020 CPP visual motion localizer developpers
 
 %% mainScript
-% 1- Nom de l’expérience ici
-% 2- Courte description de l’expérience & de la consigne pour le participant
-% 3- Nom du fichier de l’expérience (script principal) & noms des fonctions utilisées
-% 4- Courte description de ce qui est enregistré (output du script)
+% 1- Nom de l'expÃ©rience ici
+% 2- Courte description de l'expÃ©rience & de la consigne pour le participant
+% 3- Nom du fichier de l'expÃ©rience (script principal) & noms des fonctions utilisÃ©es
+% 4- Courte description de ce qui est enregistrÃ© (output du script)
 % 5- Ce dont on a besoin pour rouler votre script (e.g.,: PsychToolBox, fichier des conditions/essais)
-% 6- L’année, vos noms & courriels
+% 6- L'annÃ©e de naissance, vos noms & courriels
 
 %Code ci-dessous:
 
@@ -102,7 +102,7 @@ try
     disp(cfg);
 
     % Show experiment instruction
-%     standByScreen(cfg);
+    standByScreen(cfg);
     
 %             Screen('FillRect', cfg.screen.win, cfg.color.background, cfg.screen.winRect);
 %         
@@ -160,6 +160,7 @@ try
             % saving in the tsv file
             responseEvents = getResponse('check', cfg.keyboard.responseBox, cfg);
 
+            responseEvents(1).isStim = logFile.isStim;
             responseEvents(1).fileID = logFile.fileID;
             responseEvents(1).extraColumns = logFile.extraColumns;
             saveEventsFile('save', cfg, responseEvents);

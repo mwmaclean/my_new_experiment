@@ -26,7 +26,7 @@ function [cfg] = setParameters()
 
     %% Engine parameters
 
-    cfg.testingDevice = 'mri';
+    cfg.testingDevice = 'pc';
     cfg.eyeTracker.do = false;
     cfg.audio.do = false;
 
