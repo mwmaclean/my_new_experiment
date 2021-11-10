@@ -96,8 +96,8 @@ function [cfg] = setParameters()
     cfg.fixation.type = 'cross';
     cfg.fixation.colorTarget = cfg.color.red;
     cfg.fixation.color = cfg.color.white;
-    cfg.fixation.width = .25;
-    cfg.fixation.lineWidthPix = 3;
+    cfg.fixation.width = 2;
+    cfg.fixation.lineWidthPix = 4;
     cfg.fixation.xDisplacement = 0;
     cfg.fixation.yDisplacement = 0;
 
