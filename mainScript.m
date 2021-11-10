@@ -2,12 +2,12 @@
 % (C) Copyright 2020 CPP visual motion localizer developpers
 
 %% mainScript
-% 1- Nom de l'experience ici
-% 2- Courte description de l'experience & de la consigne pour le participant
-% 3- Nom du fichier de l'experience (script principal) & noms des fonctions utilisees
-% 4- Courte description de ce qui est enregistre (output du script)
+% 1- Nom de l'expérience ici
+% 2- Courte description de l'expérience & de la consigne pour le participant
+% 3- Nom du fichier de l'expérience (script principal) & noms des fonctions utilisées
+% 4- Courte description de ce qui est enregistré (output du script)
 % 5- Ce dont on a besoin pour rouler votre script (e.g.,: PsychToolBox, fichier des conditions/essais)
-% 6- L'annee de naissance, vos noms & courriels
+% 6- L'année de naissance, vos noms & courriels
 
 %Code ci-dessous:
 
