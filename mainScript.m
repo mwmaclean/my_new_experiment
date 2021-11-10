@@ -96,12 +96,13 @@ try
 
     % Prepare output logfiles
     logFile.extraColumns = cfg.extraColumns;
+    logFile = saveEventsFile('init', cfg);
     logFile = saveEventsFile('open', cfg, logFile);
 
     disp(cfg);
 
     % Show experiment instruction
-    standByScreen(cfg);
+%     standByScreen(cfg);
     
 %             Screen('FillRect', cfg.screen.win, cfg.color.background, cfg.screen.winRect);
 %         
