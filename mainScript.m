@@ -25,8 +25,8 @@ cfg = setParameters;
 
 % Get subject name & run number before the start of the experiment
 cfg = userInputs(cfg);
-%         % Other option for user inputs:
-%        % Get subject name and run number 
+        % Other option for user inputs:
+       % Get subject name and run number 
 %         subjectName = input('Enter Subject Name: ','s');
 %         if isempty(subjectName)
 %           subjectName = 'trial';
@@ -141,11 +141,13 @@ try
             % Check for experiment abortion from operator
             checkAbort(cfg, cfg.keyboard.keyboard);
 
-            [thisEvent, thisFixation, cfg] = preTrialSetup(cfg, iBlock, iTrial);
+            % generic function to prepare some structure before each trial
+            [thisEvent, thisFixation, cfg] = preTrialSetup(cfg, iBlock, iTrial); 
 
             % play the trial and collect onset and duration of the event
             [onset, duration] = doTrial(cfg, thisEvent, thisFixation);
 
+            % generic function to prepare structures before saving
             thisEvent = preSaveSetup( ...
                                      thisEvent, ...
                                      iBlock, ...

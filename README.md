@@ -25,7 +25,7 @@ It was adapted to be used as a teaching example and includes:
 
 ## Ressources to help structure your code
 
-PsychDemos that are in the `exampleScripts` folder [here](https://github.com/mwmaclean/my_new_experiment/tree/master/exampleScript/PsychExampleExperiments) were taken from the PTB code:  C:\PATH\to\PTB\toolboxPsychtoolbox\PsychDemos (change path to where you downloaded PTB)
+PsychDemos that are in the `exampleScripts` folder [here](https://github.com/mwmaclean/my_new_experiment/tree/master/exampleScripts) were taken from the PTB code:  C:\PATH\to\PTB\toolboxPsychtoolbox\PsychDemos (change path to where you downloaded PTB)
 
 GitHub: Search for PTB repos/scripts
 

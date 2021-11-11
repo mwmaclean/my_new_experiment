@@ -142,7 +142,7 @@ end
 function cfg = setMonitor(cfg)
 
     % Monitor parameters for PTB
-    cfg.color.white = [255 255 255];
+    cfg.color.white = [255 255 255]; 
     cfg.color.black = [0 0 0];
     cfg.color.red = [255 0 0];
     cfg.color.grey = mean([cfg.color.black; cfg.color.white]);
