@@ -31,13 +31,13 @@ cfg = userInputs(cfg);
 %         if isempty(subjectName)
 %           subjectName = 'trial';
 %         end
-%         
+% %         
 %         runNumber = input('Enter the run Number: ','s');
 %         if isempty(runNumber)
 %           runNumber = 'trial';
 %         end
 %         
-%         % If the run number is set to zero, it is a training session
+% %         % If the run number is set to zero, it is a training session
 %         if strcmp(runNumber,'0')
 %             numberTraining = 10;
 %             Cfg.numEvents = numberTraining;
@@ -143,7 +143,7 @@ try
 
             [thisEvent, thisFixation, cfg] = preTrialSetup(cfg, iBlock, iTrial);
 
-            % play the dots and collect onset and duraton of the event
+            % play the trial and collect onset and duration of the event
             [onset, duration] = doTrial(cfg, thisEvent, thisFixation);
 
             thisEvent = preSaveSetup( ...
@@ -171,7 +171,7 @@ try
 
     end
 
-    % End of the run for the BOLD to go down (if doing an fMRI experiment)
+    % End of the run (if doing an fMRI experiment: allows the BOLD signal to go down )
     waitFor(cfg, cfg.timing.endDelay);
 
     cfg = getExperimentEnd(cfg);

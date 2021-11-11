@@ -1,7 +1,27 @@
 # Template repository for matlab PTB project
+## Content
+This repo is for students who want to design a new PsychToolbox(PTB) experiment using an existing script template and a library of functions.
 
 This repo used the template from the CPP Lab developpers [here](https://github.com/cpp-lln-lab/template_PTB_experiment).
-It was adapted to be used as a teaching example. 
+It was adapted to be used as a teaching example and includes: 
+
+```
+.
+├── dev
+├── exampleScripts  # where you will find demos
+│   ├── PsychExampleExperiments    
+│   └── simple_demos.m
+├── lib # where you will find useful functions for your experiment from the CPP Lab
+│   ├── CPP_BIDS
+│   ├── CPP_PTB
+├── src # where you put your code
+├── LICENSE  
+├── README.md
+├── initEnv.m # a .m file to set up your project (adds the right folder to the path)
+├── mainScript.m # a .m file to be used as a template script
+└── setParameters.m # a .m file to initialize your parameters and configuration variables
+
+```
 
 ## Ressources to help structure your code
 
