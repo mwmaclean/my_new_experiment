@@ -25,23 +25,23 @@ cfg = setParameters;
 
 % Get subject name & run number before the start of the experiment
 cfg = userInputs(cfg);
-        % Other option for user inputs:
-       % Get subject name and run number 
-%         subjectName = input('Enter Subject Name: ','s');
-%         if isempty(subjectName)
-%           subjectName = 'trial';
-%         end
+% %         %Other option for user inputs:
+% %        %Get subject name and run number 
+% %         subjectName = input('Enter Subject Name: ','s');
+% %         if isempty(subjectName)
+% %           subjectName = 'trial';
+% %         end
+% % %         
+% %         runNumber = input('Enter the run Number: ','s');
+% %         if isempty(runNumber)
+% %           runNumber = 'trial';
+% %         end
 % %         
-%         runNumber = input('Enter the run Number: ','s');
-%         if isempty(runNumber)
-%           runNumber = 'trial';
-%         end
-%         
-% %         % If the run number is set to zero, it is a training session
-%         if strcmp(runNumber,'0')
-%             numberTraining = 10;
-%             Cfg.numEvents = numberTraining;
-%         end
+% % %         % If the run number is set to zero, it is a training session
+% %         if strcmp(runNumber,'0')
+% %             numberTraining = 10;
+% %             Cfg.numEvents = numberTraining;
+% %         end
 
 % Create the BIDS directories & fileNames for the behavioral output
     % for this subject / session / run using the information from cfg.
